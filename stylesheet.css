@@ -202,7 +202,7 @@ a p{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    width: 80%;
+    width: 100%;
     margin:1% 10%;
   }
   #view-more{
