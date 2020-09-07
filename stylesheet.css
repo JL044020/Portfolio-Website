@@ -1,6 +1,6 @@
 body{
-  font-family: apple symbols regular, serif;
   color: black;
+  font-family: 'Lato', sans-serif;
   background: url(https://img.freepik.com/free-vector/seamless-pattern_1159-5086.jpg?size=626&ext=jpg) fixed ;
   background-size: 50px;
   background-color: rgb(140, 140, 141);
@@ -8,10 +8,12 @@ body{
   padding: 0;
   line-height: 1.5;
   align-items: center;
-  
-  /*font-family: 'Fredoka One', cursive;
-  font-family: 'Crete Round', serif;*/
+
 }
+#container-top{
+  width: auto;
+}
+
 a{
   text-decoration:none;
   color: white;
@@ -23,13 +25,15 @@ a{
   min-height: 4em;
 }
 #navbar ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   text-decoration: none;
   float: right;
+  
 }
 
 li{
-  font-family: 'Fredoka One', cursive;
   font-size: 20px;
   margin-left: 1em;
   margin-right: 1em;
@@ -62,7 +66,7 @@ li:hover{
   height: auto;
   background: rgb(194, 37, 32, 0.5);
   background-position: center;
-  width: 100vh;
+  width: 100%;
   color: white;
 }
 #title h1{
@@ -88,7 +92,7 @@ li:hover{
 .project-tile{
   /*border: 1px rgb(61, 61, 61) solid;*/
   height: 20em;
-  width: 15em;
+  width: auto;
 }
 
 #grid-container{
@@ -108,8 +112,8 @@ li:hover{
 }
 
 .projects-grid a{
-  max-width: 90%;
-  max-height: 90%;
+  max-width: auto;
+  max-height: auto;
 }
 a img{
   object-fit: contain;
@@ -117,7 +121,6 @@ a img{
   width: 100%;
 }
 a p{
-  font-family: 'Fredoka One', cursive;
   display: flex;
   font-size: 15px;
   justify-content: center;  
@@ -127,7 +130,6 @@ a p{
  #view-more{
   background: rgb(140, 140, 141);
   font-weight: bold;
-  font-family: 'Fredoka One', cursive;
   border: 1px rgb(61, 61, 61) solid;   color: white;
   margin: 1em;
   font-size: 15px;
@@ -137,12 +139,8 @@ a p{
 
 }
  #view-more:hover{
-  background-color: rgb(157, 211, 249);
-  color: rgb(194, 37, 32);
+  background-color: rgb(8, 62, 99);
   margin: 1em;
-  width: 40%;
-  height: 15%;
-  transform: scale(1.1);
   border: 2px orange solid;
 
 }
@@ -200,24 +198,65 @@ a p{
   color: white;
 }
 
-@media(max-width: 650px){
+@media screen and (max-width: 650px){
   .projects-grid{
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-items: center;
-    width: 80%;
-    margin:1% 10%;
+    width: auto;
+    margin:1% 1%;
   }
+  body{
+    width: auto;
+    padding: auto;
+  }
+  #navbar ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-decoration: none;
+    float: center;
+  }
+
   #view-more{
     background: rgb(140, 140, 141);
     font-weight: bold;
-    font-family: 'Fredoka One', cursive;
+    border: 1px rgb(61, 61, 61) solid;   color: white;
+    margin: 1em;
+    font-size: 15px;
+    width: 50%;
+    height: 80%;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 651px){
+  .projects-grid{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: auto;
+    margin:1% 10%;
+  }
+  #navbar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-decoration: none;
+    float: center;
+  }
+
+  #view-more{
+    background: rgb(140, 140, 141);
+    font-weight: bold;
     border: 1px rgb(61, 61, 61) solid;   color: white;
     margin: 1em;
     font-size: 15px;
     height: auto;
+    width: 50%;
+    height: 20%;
     color: black;
   }
 }
