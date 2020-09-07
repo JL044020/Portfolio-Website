@@ -22,7 +22,7 @@ a{
   background-color: rgb(77, 77, 77);
   position: fixed;
   width: 100%;
-  min-height: 4em;
+  max-height: 4em;
 }
 #navbar ul{
   display: grid;
@@ -30,24 +30,22 @@ a{
   justify-content: space-between;
   text-decoration: none;
   float: right;
-  
 }
 
 li{
   font-size: 20px;
   margin-left: 1em;
   margin-right: 1em;
-  /*background: rgb(140, 140, 141);*/
   display: inline;
   font-weight: bold;
-  /*border: 1px rgb(61, 61, 61) solid; */
+}
+.toggle{
+  display: none;
 }
 
 li:hover{
-  border: 3px rgb(0, 48, 87) solid;
-  background-color: rgb(8, 62, 99);
+  transform: scale(1.2);
 }
-
 
 #welcome-section{
   display: flex;
@@ -90,9 +88,14 @@ li:hover{
 }
 
 .project-tile{
-  /*border: 1px rgb(61, 61, 61) solid;*/
   height: 20em;
   width: auto;
+  color: black;
+  font-weight: bold;
+
+}
+.project-tile:hover{
+  transform: scale(1.1);
 }
 
 #grid-container{
@@ -122,7 +125,7 @@ a img{
 }
 a p{
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   justify-content: center;  
   margin: 0;
 }
@@ -136,13 +139,11 @@ a p{
   width: 50%;
   height: 20%;
   color: black;
-
 }
  #view-more:hover{
   background-color: rgb(8, 62, 99);
   margin: 1em;
   border: 2px orange solid;
-
 }
 
 #contact{
@@ -162,7 +163,6 @@ a p{
   margin-top: 1em;
   margin-bottom: 0em;
   text-align: center;
-
 }
 #contact p{
   padding-top:0em;
@@ -212,13 +212,23 @@ a p{
     padding: auto;
   }
   #navbar ul{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     text-decoration: none;
-    float: center;
+    float: right;
   }
-
+  .item{
+    display: none;
+  }
+  .toggle{
+    display: flex ;
+    justify-content: right;
+  }
+  #contact-line{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   #view-more{
     background: rgb(140, 140, 141);
     font-weight: bold;
@@ -241,13 +251,13 @@ a p{
     margin:1% 10%;
   }
   #navbar ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    display: flex;
     text-decoration: none;
-    float: center;
+    float: right;
   }
-
+  .toggle{
+    display: none;
+  }
   #view-more{
     background: rgb(140, 140, 141);
     font-weight: bold;
