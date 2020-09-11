@@ -20,6 +20,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="icon" href="favicon.png">
+  <script type="text/javascript" src="functions.js"></script> 
+
 
 </head>
 <body id="container-top">
@@ -28,7 +30,7 @@
       <div id="logo">
       <img src="Logo.png" alt="LoKation company logo">
       </div>
-      <ul>
+      <ul class="topnav" id="myTopnav">
         <li class="item">
           <a href="#welcome-section">Welcome</a>
         </li>
@@ -38,7 +40,7 @@
         <li class="item">
           <a href="#contact">Contact</a>
         </li>
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li class="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
