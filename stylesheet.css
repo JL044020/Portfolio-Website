@@ -2,14 +2,11 @@
 body{
   color: black;
   font-family: 'Lato', sans-serif;
-  /*background: url(background.jpg) fixed ;
-  background-size: 50px;*/
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
   line-height: 1.5;
   align-items: center;
-
 }
 #container-top{
   width: auto;
@@ -28,19 +25,21 @@ a{
   max-height: 4em;
   z-index: 1;
 }
+
 #navbar img{
   display: inline-block;
-  align-items: center;
   height: 4em;
+  padding-left: 5px;
   vertical-align: middle;
 }
 
 #navbar ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: flex-end;
   text-decoration: none;
   float: right;
+  margin: 15px 0;
+  padding: 0;
 }
 
 li{
@@ -49,6 +48,7 @@ li{
   margin-right: 1em;
   display: inline;
   font-weight: bold;
+  
 }
 
 .toggle{
@@ -61,15 +61,16 @@ li{
   font-size:30px !important;
 }
 
-li:hover{
+#notcurrent:hover{
   transform: scale(1.2);
 }
-
+.current{
+  color: orange;
+}
 #welcome-section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   background: url(under-construction.jpeg);
   background-repeat: no-repeat;
@@ -212,10 +213,10 @@ a p{
   text-align: center;
 }
 #footer{
-  color: white;
+  color: orange;
 }
 #footer a{
-  color: white;
+  color: orange;
 }
 
 @media screen and (max-width: 650px){
@@ -233,7 +234,7 @@ a p{
   }
   #navbar{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     background-color: rgb(8,62,99);
     position: fixed;
     max-width: 100%;
@@ -252,9 +253,9 @@ a p{
     flex-direction: column;
     text-decoration: none;
     flex-wrap: wrap;
-    margin-right: 1em;
+    width:100%;
+    margin: 0;
   }
-
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
   .topnav.responsive {position: relative;}
@@ -265,21 +266,33 @@ a p{
   }
   .topnav.responsive li {
     display: block;
-    text-align: left;
+  }
+  .icon{
+    display:inline-block;
   }
   .topnav.responsive #toggle-bars{
     display: none;
   }
   .topnav.responsive #toggle-x{
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 3em;
+  }
+  #toggle-bars{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 3em;
   }
   #toggle-x{
     display: none;
   }
-  .item{
+  li.item{
     display: none;
-    padding: 20px 10em 20px 3px;
-    margin: 0 2em -1px 0;
+    position: relative;
+    padding:20px 0 20px 10px;
+    margin: 0 0 -1px 0;
     background-color:rgb(8,62,99) ;
     font-size: 20px;
   }
@@ -288,17 +301,13 @@ a p{
     border-bottom-right-radius: 10px;
   }
 
-  .item:hover{
+  #notcurrent:hover{
     background-color:rgb(34,34,34) ;
     transform: none;
-    font-size: 25px
   }
   .toggle{
     display: flex ;
     flex: 0;
-    justify-content: right;
-    padding-bottom: 14px;
-    margin-left: 8em;
   }
   .toggle:hover {
     transform: none;
@@ -345,7 +354,7 @@ a p{
     text-decoration: none;
     float: right;
   }
- 
+  
   .toggle{
     display: none;
   }
@@ -362,7 +371,7 @@ a p{
   }
 }
 
-@media screen and (max-width: 600px) and (min-width: 501px){
+/*@media screen and (max-width: 600px) and (min-width: 501px){
   .toggle{
     margin-left: 6em;
   }
@@ -381,4 +390,4 @@ a p{
   .toggle{
     margin-left: 1.5em;
   }
-}
+}*/
