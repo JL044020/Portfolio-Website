@@ -1,3 +1,5 @@
 lokation1.png filter=lfs diff=lfs merge=lfs -text
 lokation2.png filter=lfs diff=lfs merge=lfs -text
 twilight.png filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
