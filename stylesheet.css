@@ -2,7 +2,7 @@
 body{
   color: black;
   font-family: 'Lato', sans-serif;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -70,7 +70,6 @@ li{
 #welcome-section{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100vh;
   background: url(https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/under-construction.jpeg);
   background-repeat: no-repeat;
@@ -80,11 +79,11 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
-  background: rgb(194, 37, 32, 0.5);
+  height: 100%;
+  background: rgb(140, 140, 141, 0.4);
   background-position: center;
   width: 100%;
-  color: white;
+  color: black;
 }
 #title h1{
   font-size: 40px;
@@ -95,7 +94,6 @@ li{
   margin-top: -1em;
   padding-bottom: 1em;
 }
-
 
 #project-header{
   display: flex;
@@ -129,6 +127,7 @@ li{
 .projects-grid{
   display: grid;
   grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content 1fr;
   justify-content: center;
@@ -162,7 +161,7 @@ a p{
   border-radius: 0px;
 }
 
- #view-more{
+ /*#view-more{
   background: rgb(140, 140, 141);
   font-weight: bold;
   border: 1px rgb(61, 61, 61) solid;   color: white;
@@ -180,7 +179,7 @@ a p{
   background-color: rgb(8, 62, 99);
   margin: 1em;
   border: 2px orange solid;
-}
+}*/
 
 #contact{
   display: flex;
@@ -332,7 +331,7 @@ a p{
     flex-direction: column;
     text-align: center;
   }
-  #view-more{
+  /*#view-more{
     background: rgb(140, 140, 141);
     font-weight: bold;
     border: 1px rgb(61, 61, 61) solid;   color: white;
@@ -342,7 +341,7 @@ a p{
     height: auto;
     max-height: 3em;
     color: black;
-  }
+  }*/
 }
 
 @media screen and (max-width: 950px) and (min-width: 651px){
@@ -373,7 +372,7 @@ a p{
   .toggle{
     display: none;
   }
-  #view-more{
+  /*#view-more{
     background: rgb(140, 140, 141);
     font-weight: bold;
     border: 1px rgb(61, 61, 61) solid;   color: white;
@@ -383,5 +382,5 @@ a p{
     height: auto;
     max-height: 3em;
     color: black;
-  }
+  }*/
 }
