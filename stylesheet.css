@@ -112,10 +112,13 @@ li{
   width: auto;
   color: black;
   font-weight: bold;
-
+}
+.project-tile img {
+  object-fit: cover;
+  border-radius: 50px;
 }
 .project-image:hover{
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
 
 #grid-container{
@@ -129,6 +132,7 @@ li{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content 1fr;
   justify-content: center;
+  align-items: center;
   width: 80%;
   margin:1% 10%;
 }
@@ -149,6 +153,15 @@ a p{
   margin: 0;
 }
 
+.project-logo {
+  height: 20em;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
  #view-more{
   background: rgb(140, 140, 141);
   font-weight: bold;
@@ -158,8 +171,10 @@ a p{
   width: 50%;
   height: auto;
   min-height: 20%;
+  max-height: 3em;
   color: black;
   justify-content: center;
+  border-radius: 15px;
 }
  #view-more:hover{
   background-color: rgb(8, 62, 99);
