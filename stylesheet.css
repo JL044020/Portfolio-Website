@@ -70,6 +70,8 @@ li{
 #welcome-section{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background: url(https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/under-construction.jpeg);
   background-repeat: no-repeat;
@@ -79,11 +81,11 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  background: rgb(140, 140, 141, 0.4);
+  height: auto;
+  background: rgb(194, 37, 32, 0.5);
   background-position: center;
   width: 100%;
-  color: black;
+  color: white;
 }
 #title h1{
   font-size: 40px;
