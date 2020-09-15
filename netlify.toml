@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/search1"
-  to = "https://loving-heisenberg-acd679.netlify.app/"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
