@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "www.lemusbranch.com/12402"
-  to = "https://loving-heisenberg-acd679.netlify.app"
+  from = "https://lemusbranch.com/12402"
+  to = "https://loving-heisenberg-acd679.netlify.app/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
