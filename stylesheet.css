@@ -35,7 +35,7 @@ a{
 
 #navbar ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-decoration: none;
   float: right;
   margin: 15px 0;
@@ -48,7 +48,6 @@ li{
   margin-right: 1em;
   display: inline;
   font-weight: bold;
-  
 }
 
 .toggle{
@@ -163,25 +162,6 @@ a p{
   border-radius: 0px;
 }
 
- /*#view-more{
-  background: rgb(140, 140, 141);
-  font-weight: bold;
-  border: 1px rgb(61, 61, 61) solid;   color: white;
-  margin: 1em;
-  font-size: 15px;
-  width: 50%;
-  height: auto;
-  min-height: 20%;
-  max-height: 3em;
-  color: black;
-  justify-content: center;
-  border-radius: 15px;
-}
- #view-more:hover{
-  background-color: rgb(8, 62, 99);
-  margin: 1em;
-  border: 2px orange solid;
-}*/
 
 #contact{
   display: flex;
@@ -333,17 +313,6 @@ a p{
     flex-direction: column;
     text-align: center;
   }
-  /*#view-more{
-    background: rgb(140, 140, 141);
-    font-weight: bold;
-    border: 1px rgb(61, 61, 61) solid;   color: white;
-    margin: 1em;
-    font-size: 15px;
-    width: auto;
-    height: auto;
-    max-height: 3em;
-    color: black;
-  }*/
 }
 
 @media screen and (max-width: 950px) and (min-width: 651px){
@@ -370,19 +339,12 @@ a p{
     text-decoration: none;
     float: right;
   }
-  
+  li{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
   .toggle{
     display: none;
   }
-  /*#view-more{
-    background: rgb(140, 140, 141);
-    font-weight: bold;
-    border: 1px rgb(61, 61, 61) solid;   color: white;
-    margin: 1em;
-    font-size: 15px;
-    width: 50%;
-    height: auto;
-    max-height: 3em;
-    color: black;
-  }*/
 }

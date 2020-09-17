@@ -19,6 +19,7 @@
   <title>Welcome to the Lemus Branch</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="icon" href="https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/favicon.png">
   <script type="text/javascript" src="functions.js"></script> 
 
@@ -35,13 +36,16 @@
           <li id="toggle-bars" class="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
           <li id="toggle-x" class="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-times"></i></a></li>
           <li class="item">
-            <a class= "current" href="#welcome-section">Home</a>
+            <a class= "current" href="#" onclick="return false;">Home</a>
           </li>
           <li id= "notcurrent" class="item">
             <a href="#projects">Listings</a>
           </li>
           <li id= "notcurrent" class="item">
-            <a href="#contact">Contact</a>
+            <a href="/About/" onclick="return false;">About</a>
+          </li>
+          <li id= "notcurrent" class="item">
+            <a href="/Contact/" onclick="return false;">Contact</a>
           </li>
         </ul>
       </div>
@@ -63,20 +67,7 @@
           <img src="https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/12402%20Grand%20Oaks%20Dr_04.jpg" alt="Project Thumbnail" class="project-image">
           <p class="project-title">12402 Grand Oaks Dr. Davie, FL 33330</p>
         </a>
-       <!-- <a href="#" class="project-tile"alt="Project" target="_blank">
-          <video width="100%" height="{#}" controls><source src="Listing images/12402 Grand Oaks Dr.mp4" type="video/ogg" /></video>
-          <p class="project-title">123 Main St</p>
-        </a>
-        <a href="#" class="project-tile"alt="Project" target="_blank">
-          <iframe width="853" height="480" src="https://my.matterport.com/show/?m=CUgC4RQpZcd&brand=0" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
-          <p class="project-title">123 Main St</p>
-        </a>
-        <a href="#" class="project-tile"alt="Project" target="_blank">
-          <img src="https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/Lokation3.png" alt="Project Thumbnail" class="project-image">
-          <p class="project-title">123 Main St</p>
-        </a>
-        <button id="view-more"><a href="###" target="_blank" id="profile-link">View All Listings</a></button>-->
-        <a href="#" class="project-logo" alt="Project">
+        <a href="/Contact/" class="project-logo" alt="Project">
           <img src="https://media.githubusercontent.com/media/JL044020/Portfolio-Website/master/Listing%20images/Lokation3.png" alt="Project Thumbnail" class="project-image">
           <p class="project-title">Add Your Property Here</p>
         </a>
@@ -89,10 +80,9 @@
         <p>Combining my passion for Real Estate, Investments and Programming.</p>
      </div> 
       <div id="contact-line">
-        <a href="https://codepen.io/jl044020" id="contact-link" target="_blank">CodePen.io
+        <a href="https://lokationre.com/" target="_blank">Join LoKation
         </a>
-        <a href="https://github.com/JL044020" id="contact-link" target="_blank" >
-          <i class="fa fa-github"></i>GitHub
+        <a href="https://github.com/JL044020" target="_blank"> Checkout My Github Repos
         </a>
         <a href="https://www.facebook.com/jose.lemussiguence" id="contact-link" target="_blank">Facebook
         </a>
@@ -101,6 +91,6 @@
     </main>
   </body>
   <footer id="footer">
-    <p>Copyright &copy; 2020 <a href="https://codepen.io/dashboard/" target="_blank">Lemus Branch</a></p>
+    <p>Copyright &copy; 2020 <a href="https://lemusbranch.com/" >Lemus Branch</a></p>
   </footer>
 </html>
